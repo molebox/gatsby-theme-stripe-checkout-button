@@ -2,7 +2,7 @@
 
 A Gatsby theme that implements a stripe checkout, you bring the button, we submit it as a stripe checkout. Register an account at [Stripe](https://stripe.com/en-se) to get started.
 
-Add to your Gatsby sites gatsby-config.js just like you would with a plugin. The `STRIPE_API_KEY`, `STRIPE_SECRET_KEY` and `siteUrl` are passed in as options from the consuming theme.
+Add to your Gatsby sites gatsby-config.js just like you would with a plugin. The `STRIPE_API_KEY`, `STRIPE_SECRET_KEY` and `siteUrl` are passed in as options from the consuming theme or site.
 
 ---
 
@@ -31,8 +31,7 @@ module.exports = {
         options: {
           STRIPE_API_KEY,
           STRIPE_SECRET_KEY,
-          siteUrl,
-          customerEmail
+          siteUrl
         }
       }
   ],
