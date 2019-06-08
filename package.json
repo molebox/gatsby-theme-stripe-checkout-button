@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-stripe-checkout-button",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Gatsby theme that implements a stripe checkout, you bring the button, we submit it as a stripe checkout",
   "main": "./src/index.js",
   "types": "./src/@types/gatsby-theme-west-egg-stripe-cart/index.d.ts",
