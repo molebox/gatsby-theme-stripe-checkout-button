@@ -1,10 +1,10 @@
 {
   "name": "gatsby-theme-stripe-checkout-button",
   "author": "Hungry Bear Studio <roar@hungrybearstudio.com> (hungrybearstudio.com)",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "A Gatsby theme that implements a stripe checkout, you bring the button, we submit it as a stripe checkout",
   "main": "./src/index.js",
-  "types": "./src/@types/gatsby-theme-west-egg-stripe-cart/index.d.ts",
+  "types": "./src/@types/gatsby-theme-stripe-checkout-button/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/molebox/gatsby-theme-stripe-checkout-button.git"
