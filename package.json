@@ -1,6 +1,7 @@
 {
   "name": "gatsby-theme-stripe-checkout-button",
-  "version": "0.0.2",
+  "author": "Hungry Bear Studio <roar@hungrybearstudio.com> (hungrybearstudio.com)",
+  "version": "0.0.3",
   "description": "A Gatsby theme that implements a stripe checkout, you bring the button, we submit it as a stripe checkout",
   "main": "./src/index.js",
   "types": "./src/@types/gatsby-theme-west-egg-stripe-cart/index.d.ts",
@@ -12,6 +13,7 @@
   "keywords": [
     "gatsby",
     "gatsby-theme",
+    "gatsby-plugin",
     "react",
     "cart",
     "ecommerce"
