@@ -1,6 +1,6 @@
 # gatsby-theme-stripe-checkout-button
 
-A Gatsby theme that implements a stripe checkout, you bring the button, we submit it as a stripe checkout. Register an account at [Stripe](https://stripe.com/en-se) to get started.
+A Gatsby theme that implements a stripe checkout, you bring the button, we submit it as a stripe checkout. Register an account at [Stripe](https://stripe.com/en-se) and follow the instruction for setting up a developer account to get started.
 
 Add to your Gatsby sites gatsby-config.js just like you would with a plugin. The `STRIPE_API_KEY`, `STRIPE_SECRET_KEY` and `siteUrl` are passed in as options from the consuming theme or site.
 
@@ -25,7 +25,7 @@ require("dotenv").config({
 ```
 module.exports = {
 
-    __experimentalThemes: [
+    plugins: [
       {
         resolve: 'gatsby-theme-stripe-checkout-button',
         options: {

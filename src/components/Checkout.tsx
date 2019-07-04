@@ -3,10 +3,26 @@ import { MetadataContext, MetadataProvider } from "../utils/MetadataProvider";
 import Error from "pages/error";
 
 interface Stripe {
+  /**
+   * A custom button which will act as the checkout button
+   */
   button: JSX.Element;
+  /**
+   * The product SKU
+   */
   sku: string;
+  /**
+   * The product quantity to be purchased
+   */
   quantity: number;
+  /**
+   * The customers email. (Optional) Used to prefill the checkout form
+   */
   customerEmail?: string;
+  /**
+   * A custom error message to show incase of bad api/secret key being provided. (Optional) Default text -
+   * No metadata provided, please check your configuration.
+   */
   customErrorMessage?: string;
 }
 
@@ -56,8 +72,10 @@ const StripeButton = ({
               billingAddressCollection: "auto"
             })
             .then((result: any) => {
+              // Log the result to the console to check that everything went as planned
               console.log({ result });
               if (result.error) {
+                // Log the error to the console to check what went wrong
                 console.log(result.error.message);
                 return <Error error={result.error.message} />;
               }
@@ -70,7 +88,7 @@ const StripeButton = ({
 };
 
 /**
- * A Stripe checkout form. When submitted the user will be redirected to the stripe checkout.
+ * A Stripe checkout form button. When submitted the user will be redirected to the stripe checkout.
  * Upon completion of purchase the user will be redirected back to your website.
  *
  * @example <StripeCheckout button={<MyCustomButton type="submit" text="Buy"/>} sku="sku_123" quantity={1}/>
