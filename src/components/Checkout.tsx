@@ -1,6 +1,6 @@
 import * as React from "react";
 import { MetadataContext, MetadataProvider } from "../utils/MetadataProvider";
-import Error from "pages/error";
+import Error from "../pages/error";
 
 interface Stripe {
   /**
@@ -91,7 +91,7 @@ const StripeButton = ({
  * A Stripe checkout form button. When submitted the user will be redirected to the stripe checkout.
  * Upon completion of purchase the user will be redirected back to your website.
  *
- * @example <StripeCheckout button={<MyCustomButton type="submit" text="Buy"/>} sku="sku_123" quantity={1}/>
+ * @example <Checkout button={<MyCustomButton type="submit" text="Buy"/>} sku="sku_123" quantity={1}/>
  * @param button A custom button element to submit the form
  * @param sku A product stock keeping unit
  * @param quantity The quantity to be included in the checkout

@@ -57,13 +57,13 @@ In addition the component requires you to provide the products sku (which can be
 
 Once the user clicks the button to make a purchase they are redirected to the stripe checkout where they can fill out their card details and complete their purchase. Upon completion the user is redirected back to your gatsby site.
 
-This theme provides three base components (success/canceled/error) which you should shadow and style yourself. These components should be placed inside your src/gatsby-theme-stripe-checkout-button/pages:
+This theme provides three base components (success/canceled/error) which you should style yourself. These components should be placed inside your src/pages folder:
 
 ```
-src/gatsby-theme-stripe-checkout-button/pages/checkout/success
-src/gatsby-theme-stripe-checkout-button/pages/checkout/canceled
+src/pages/checkout/success
+src/pages/checkout/canceled
 ---
-src/gatsby-theme-stripe-checkout-button/pages/error
+src/pages/error
 ```
 
 ## Built With

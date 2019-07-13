@@ -11,6 +11,7 @@ module.exports = (options) => {
     },
     plugins: [
       'gatsby-plugin-stripe',
+      'gatsby-plugin-typescript',
       {
         resolve: `gatsby-source-stripe`,
         options: {
