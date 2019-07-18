@@ -1,7 +1,7 @@
 {
   "name": "gatsby-theme-stripe-checkout-button",
   "author": "Hungry Bear Studio <roar@hungrybearstudio.com> (hungrybearstudio.com)",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Gatsby theme that implements a stripe checkout, you bring the button, we submit it as a stripe checkout",
   "main": "index.js",
   "types": "./src/@types/gatsby-theme-stripe-checkout-button/index.d.ts",
