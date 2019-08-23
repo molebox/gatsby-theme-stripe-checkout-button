@@ -38,7 +38,7 @@ module.exports = {
 }
 ```
 
-Example usage:
+## Example usage:
 
 ```
 import { Checkout } from 'gatsby-theme-stripe-checkout-button';

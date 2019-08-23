@@ -69,7 +69,7 @@ const StripeButton = ({
               successUrl: `${siteUrl}/checkout/success`,
               cancelUrl: `${siteUrl}/checkout/canceled`,
               customerEmail,
-              billingAddressCollection: "auto"
+              billingAddressCollection: 'required',
             })
             .then((result: any) => {
               // Log the result to the console to check that everything went as planned

@@ -7,7 +7,7 @@ import { graphql, useStaticQuery } from "gatsby";
 export const useSiteMetadata = () => {
   const { site } = useStaticQuery(
     graphql`
-      query {
+      query OPTIONS_QUERY {
         site {
           siteMetadata {
             STRIPE_API_KEY
